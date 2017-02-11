@@ -58,8 +58,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.write_data:
-                bluetoothClient.writeToDev("2449434A43000C000000002B");
-//                bluetoothClient.writeToDev("$CCICA,0,0*4B");
+//                bluetoothClient.writeToDev("2449434A43000C000000002B");
+                bluetoothClient.writeToDev("$CCICA,0,0*4B");
                 break;
             case R.id.open_blue:
                 if(bluetoothClient.devCanUseBlueTooth()){
